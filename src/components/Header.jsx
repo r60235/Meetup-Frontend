@@ -9,7 +9,6 @@ const Header = () => {
                     <a className="navbar-brand" href="#">
                         <img src="meetup.svg" alt="Meetup" width="60" height="51"/>
                     </a>
-
                     <form className="d-flex" role="search">
                         <input className="form-control me-2" type="search" 
                             placeholder="Search by title and tags" 
