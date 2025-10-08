@@ -16,8 +16,6 @@ const Header = () => {
                             aria-label="Search"
                             onChange={(e)=>findEventByEventTitleAndTags(e.target.value)}/>
                     </form>
-                    
-
                 </div>
             </nav>
         </div>
