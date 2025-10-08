@@ -1,7 +1,9 @@
-const Header = () => {
+const Footer = () => {
     return (
-        <div></div>
+        <div>
+           
+        </div>
     )
 }
 
-export default Header;
+export default Footer;
