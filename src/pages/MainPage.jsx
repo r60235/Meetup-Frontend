@@ -7,7 +7,7 @@ const MainPage = () => {
     const [searchInput, setSearchInput] = useState("");
     const [eventTypeSelect, setEventType] = useState("All");
 
-    const { data : events, loading, error } = useFetch("http://localhost:5001/events");
+    const { data : events, loading, error } = useFetch("https://meetup-backend-silk.vercel.app/events");
 
     const filteredEvents = events?.filter((ev) => {
         const matchesSearch = 
