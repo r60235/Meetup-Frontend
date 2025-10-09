@@ -23,14 +23,14 @@ const MainPage = () => {
         <div className="bg-light">
             <main className="container py-3">
                 <Header searchInput={searchInput} setSearchInput={setSearchInput} />
-                {loading &&  <p>Loading...</p>}
                 <div className="border-bottom border-dark mb-4"></div>
+                {loading &&  <p>Loading...</p>}
 
                 <div className="d-flex justify-content-between align-items-center">
-                    <h1 className="display-2 fw-bold">Meetup Events</h1>
+                    <h1 className="display-2 fw-bold mb-5">Meetup Events</h1>
                     <div>
                         <select
-                            className="form-select"
+                            className="form-select mb-3"
                             aria-label="Filter by event type"
                             value={eventTypeSelect}
                             onChange={(e) => setEventType(e.target.value)}
@@ -65,7 +65,7 @@ const MainPage = () => {
                                 <div className="card-body">
                                     {/* date */}
                                     <p className="card-text text-muted small">
-                                        {new Date(event.eventStartDateTime).toLocaleString()}
+                                        {event.startDate} | {event.startTime}
                                     </p>
                                     
                                     {/* title */}
